@@ -1,16 +1,15 @@
 //
 //  BNRHypnosisView.swift
-//  06Chapter
+//  07Chapter
 //
 //  Created by Raza Master on 1/3/15.
 //  Copyright (c) 2015 raza. All rights reserved.
-//
 //
 
 import UIKit
 
 class BNRHypnosisView: UIView {
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         // Initialization code
@@ -23,14 +22,13 @@ class BNRHypnosisView: UIView {
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        // Initialization. code
         
         //All BNRHyponosisView starts with a clear background Color
         self.backgroundColor = UIColor.clearColor()
         
         var circleColor:UIColor = UIColor.lightGrayColor()
     }
-
+    
     var circleColor:UIColor = UIColor.lightGrayColor()
     
     
@@ -47,7 +45,7 @@ class BNRHypnosisView: UIView {
         */
         
         var path = UIBezierPath()
-    
+        
         /*//Add an arc to the path at center, with radius of radius,
         //from 0 to 2*PI randian (a circle)
         var startAngle:CGFloat = 0.0
@@ -93,5 +91,5 @@ class BNRHypnosisView: UIView {
         self.setNeedsDisplay()
     }
     
-
+    
 }
