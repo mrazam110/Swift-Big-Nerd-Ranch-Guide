@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Chap1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbK-oh-dNH">
+                                <rect key="frame" x="248" y="88" width="105" height="30"/>
+                                <state key="normal" title="Show Question">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="67" y="90" width="280" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="ShowQuesBtnAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mNC-SB-I64"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9C-WV-pyk">
+                                <rect key="frame" x="16" y="59" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="61" width="280" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bb-Aa-doj">
+                                <rect key="frame" x="16" y="307" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="283" width="280" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9t-MN-VHW">
+                                <rect key="frame" x="253" y="336" width="94" height="30"/>
+                                <state key="normal" title="Show Answer">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="60" y="312" width="280" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="ShowAnsBtnAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mQm-5q-l8r"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="o9C-WV-pyk" secondAttribute="trailing" constant="16" id="0ve-mW-nai"/>
+                            <constraint firstItem="GbK-oh-dNH" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="68" id="7FG-ZX-7li"/>
+                            <constraint firstItem="T9t-MN-VHW" firstAttribute="top" secondItem="9bb-Aa-doj" secondAttribute="bottom" constant="8" id="GZD-Nv-vc4"/>
+                            <constraint firstAttribute="trailing" secondItem="9bb-Aa-doj" secondAttribute="trailing" constant="16" id="OT0-zF-8ou"/>
+                            <constraint firstAttribute="centerX" secondItem="GbK-oh-dNH" secondAttribute="centerX" constant="-0.5" id="Sjy-G0-E8F"/>
+                            <constraint firstAttribute="centerX" secondItem="T9t-MN-VHW" secondAttribute="centerX" id="Yvt-9E-Vaj"/>
+                            <constraint firstItem="o9C-WV-pyk" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="39" id="cQo-Tu-CXL"/>
+                            <constraint firstItem="9bb-Aa-doj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="iiM-wK-Dac"/>
+                            <constraint firstItem="o9C-WV-pyk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="u1R-bH-FXZ"/>
+                            <constraint firstItem="T9t-MN-VHW" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="316" id="yZe-Cg-0sP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AnsBtn" destination="T9t-MN-VHW" id="6NM-m6-z6v"/>
+                        <outlet property="AnsLbl" destination="9bb-Aa-doj" id="Dee-7P-fec"/>
+                        <outlet property="QuesBtn" destination="GbK-oh-dNH" id="whW-Pc-kkL"/>
+                        <outlet property="QuesLbl" destination="o9C-WV-pyk" id="TQh-hJ-yxx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105" y="176"/>
+        </scene>
+    </scenes>
+</document>
